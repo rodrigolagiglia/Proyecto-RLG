@@ -1,0 +1,226 @@
+/* estilos.css */
+
+:root{
+	--negroVerdadero: #000;
+	--blanco: #FFF;
+	--azulFuentes: #045ba3;
+	--azulBotonera:#045ba3;
+}
+
+*{
+	/*Elimino caracteristicas que vienen por defecto*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Russo One', sans-serif;
+	
+}
+
+h1{
+	font-size: 45px;
+	color: var(--azulFuentes);
+}
+h2{
+	font-size: 40px;
+}
+h3{
+	font-size: 22px;
+}
+h4{
+	font-size:18px;
+}
+a{
+	text-decoration: none;
+}
+
+
+/*----------------------------
+
+SECCION CABECERA
+
+------------------------------*/
+.cabecera{
+	/* background-color: red; */
+	
+	display:flex;
+	
+	max-width: 1122px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	
+}
+
+.cabecera-texto{
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.cabecera-texto h1{
+	margin-left: 50px;
+	
+}
+.cabecera-texto h2{
+	margin-left: 25px;
+	
+}
+
+.contenedor{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+
+/*----------------------------
+
+SECCION BOTONERA
+
+------------------------------*/
+
+.botonera{
+	
+	max-width: 1366px;  /*DECLARO ESTE ANCHO MAXIMO AQUI PARA EL FONDO OCUPE TODO EL ANCHO*/
+	background-color: var(--azulBotonera);
+	
+	padding: 10px 0;
+	
+}
+
+.botonera-lista{
+	
+	/* COMO EL FONDO PUEDE MEDIR HASTA 1366PX DE ANCHO LIMITO EL ANCHO DE MI MENU 
+		Y LO CENTRO, PERO NO ASI SU FONDO DECLARADO EN .BOTONERA */
+	max-width: 1122px;  
+	margin-left: auto;
+	margin-right: auto;
+	
+	list-style: none;
+	
+	justify-content: space-around;
+	display: flex;
+}
+
+.botonera-lista a{
+	
+	color: var(--blanco);
+	font-size: 20px;
+	padding: 10px 5px;
+	
+}
+
+.botonera-lista a:hover{
+	color: var(--negroVerdadero);
+}
+
+/*----------------------------
+
+SECCION SLIDER
+
+------------------------------*/
+
+.slider{
+	
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
+/*----------------------------
+
+SECCION CENTRO
+
+------------------------------*/
+
+
+.centro{
+	max-width: 1122px;  
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+.centro h2{
+	color: var(--azulFuentes);
+	text-align:center;
+}
+
+.centro-botones{
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-around; 
+	
+}
+
+.centro-botones-uno,.centro-botones-dos,.centro-botones-tres{
+	text-align:center;
+	border: 1px solid var(--azulBotonera);
+	max-width: 240px;
+}
+.centro-botones-uno:hover,.centro-botones-dos:hover,.centro-botones-tres:hover{
+	
+	border: 4px solid var(--azulBotonera);
+	
+}
+
+
+.piefondo{
+	max-width:1366px;
+	background-color: var(--azulBotonera);
+}
+.pie{
+	
+	max-width: 1122px;  
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 10px;
+}
+
+.pie-mapa{
+	margin:0 0;
+	max-width: 40%;
+	border: 2px solid var(--blanco);
+	
+	
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: var(--blanco);
+}
+.pie-mapa h4{
+	padding-bottom: 10px;
+	
+}
+.pie-mapa img{
+	padding-bottom: 10px;	
+}
+
+
+.pie-derecha{
+	max-width:555px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	
+	color: var(--blanco);
+	text-align: right;
+	font-size: 22px;
+	max-width: 40%;;
+}
+
+
+.pie-derecha-telefono{
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.pie-derecha-telefono img{
+	height: 35px;
+	width: 35px;
+	margin-right: 10px;
+}
