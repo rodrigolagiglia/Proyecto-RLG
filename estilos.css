@@ -5,6 +5,7 @@
 	--blanco: #FFF;
 	--azulFuentes: #045ba3;
 	--azulBotonera:#045ba3;
+	--azulOscuro: #003460;
 }
 
 *{
@@ -17,14 +18,14 @@
 }
 
 h1{
-	font-size: 45px;
+	font-size: 48px;
 	color: var(--azulFuentes);
 }
 h2{
-	font-size: 40px;
+	font-size: 44px;
 }
 h3{
-	font-size: 22px;
+	font-size: 30px;
 }
 h4{
 	font-size:18px;
@@ -144,9 +145,10 @@ SECCION CENTRO
 	margin-bottom: 70px;
 }
 
-.centro h2{
+.centro h3{
 	color: var(--azulFuentes);
 	text-align:center;
+
 }
 
 .centro-botones{
@@ -158,12 +160,17 @@ SECCION CENTRO
 
 .centro-botones-uno,.centro-botones-dos,.centro-botones-tres{
 	text-align:center;
-	border: 1px solid var(--azulBotonera);
+	/* border: 1px solid var(--azulBotonera); */
+	box-shadow: 0 0 0 1px var(--azulOscuro);
 	max-width: 240px;
+	color: var(--azulFuentes);
 }
 .centro-botones-uno:hover,.centro-botones-dos:hover,.centro-botones-tres:hover{
 	
-	border: 4px solid var(--azulBotonera);
+	/* border: 4px solid var(--azulBotonera); */
+	box-shadow: 0 0 0 5px var(--azulOscuro);
+	
+	color: var(--azulOscuro);
 	
 }
 
@@ -239,3 +246,7 @@ SECCION PIE
 	margin-right: 10px;
 }
 
+.creditos{
+	font-family: cursive;
+	font-size: 24;
+}
