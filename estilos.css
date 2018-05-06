@@ -125,6 +125,9 @@ SECCION SLIDER
 	text-align: center;
 	margin-bottom: 50px;
 }
+.slider img{
+	width:1122px;
+}
 
 
 /*----------------------------
@@ -138,7 +141,7 @@ SECCION CENTRO
 	max-width: 1122px;  
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 40px;
+	margin-bottom: 70px;
 }
 
 .centro h2{
@@ -165,6 +168,12 @@ SECCION CENTRO
 }
 
 
+/*----------------------------
+
+SECCION PIE
+
+------------------------------*/
+
 .piefondo{
 	max-width:1366px;
 	background-color: var(--azulBotonera);
@@ -176,6 +185,7 @@ SECCION CENTRO
 	margin-right: auto;
 	display: flex;
 	justify-content: space-around;
+	
 	padding: 20px 10px;
 }
 
@@ -202,17 +212,21 @@ SECCION CENTRO
 
 
 .pie-derecha{
-	max-width:555px;
+	
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	
+	justify-content: space-between;
 	color: var(--blanco);
 	text-align: right;
 	font-size: 22px;
-	max-width: 40%;;
+	max-width: 40%;
 }
 
+.pie-derecha-texto{
+	padding-bottom: 25px;
+	max-width:80%;
+}
 
 .pie-derecha-telefono{
 	display:flex;
@@ -224,3 +238,4 @@ SECCION CENTRO
 	width: 35px;
 	margin-right: 10px;
 }
+
