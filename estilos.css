@@ -87,6 +87,11 @@ SECCION BOTONERA
 	
 	padding: 10px 0;
 	
+	/* DOS LINEAS AGREGADAS PARA QUE LA BOTONERA BAJE CON EL SCROLL, ME SIGA */
+	position: sticky;
+	top:0;
+	z-index:3;
+	
 }
 
 .botonera-lista{
@@ -122,13 +127,34 @@ SECCION SLIDER
 ------------------------------*/
 
 .slider{
-	
-	text-align: center;
+	position: relative;
 	margin-bottom: 50px;
+	max-width:1122px;
+	margin-left: auto;
+	margin-right: auto;
 }
+
+
 .slider img{
-	width:1122px;
+	max-width:1122px;
+	
 }
+.slider-texto{
+	
+	text-align: right;
+	
+	/* Ancho maximo del texto */
+	max-width: 30%;
+	
+	/* posicion del texto dentro del contenedor */
+	position: absolute;
+	top: 50px;
+	right:20px;
+	
+	color: var(--blanco);
+	font-size: 22px;
+}
+
 
 
 /*----------------------------
@@ -225,8 +251,8 @@ SECCION PIE
 	align-items: flex-end;
 	justify-content: space-between;
 	color: var(--blanco);
-	text-align: right;
 	font-size: 22px;
+	text-align: right;
 	max-width: 40%;
 }
 
