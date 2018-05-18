@@ -103,9 +103,9 @@ SECCION BOTONERA
 	margin-right: auto;
 	
 	list-style: none;
-	
-	justify-content: space-around;
 	display: flex;
+	justify-content: space-around;
+	
 }
 
 .botonera-lista a{
@@ -193,7 +193,7 @@ SECCION CENTRO
 }
 .centro-botones-uno:hover,.centro-botones-dos:hover,.centro-botones-tres:hover{
 	
-	/* border: 4px solid var(--azulBotonera); */
+	
 	box-shadow: 0 0 0 5px var(--azulOscuro);
 	
 	color: var(--azulOscuro);
@@ -220,20 +220,17 @@ SECCION PIE
 	justify-content: space-around;
 	
 	padding: 20px 10px;
+	
 }
 
 .pie-mapa{
-	margin:0 0;
+	
 	max-width: 40%;
 	border: 2px solid var(--blanco);
-	
-	
-	display:flex;
-	flex-direction:column;
-	align-items: center;
-	justify-content: center;
+	height: 100%;
 	text-align: center;
 	color: var(--blanco);
+	
 }
 .pie-mapa h4{
 	padding-bottom: 10px;
@@ -244,21 +241,23 @@ SECCION PIE
 }
 
 
+
 .pie-derecha{
 	
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	justify-content: space-between;
+	
 	color: var(--blanco);
 	font-size: 22px;
 	text-align: right;
-	max-width: 40%;
+	max-width: 50%;
+	
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .pie-derecha-texto{
 	padding-bottom: 25px;
-	max-width:80%;
+	
 }
 
 .pie-derecha-telefono{
@@ -274,5 +273,5 @@ SECCION PIE
 
 .creditos{
 	font-family: cursive;
-	font-size: 24;
+	font-size: 24px;
 }
