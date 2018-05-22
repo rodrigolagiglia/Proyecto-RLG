@@ -18,7 +18,7 @@
 }
 
 h1{
-	font-size: 48px;
+	font-size: 3rem;
 	color: var(--azulFuentes);
 }
 h2{
@@ -51,6 +51,13 @@ SECCION CABECERA
 	margin-bottom: 30px;
 	
 }
+
+/* IMAGEN RESPONSIVE*/
+
+.cabecera img{
+	width: 100%;
+}
+
 
 .cabecera-texto{
 	
@@ -132,12 +139,13 @@ SECCION SLIDER
 	max-width:1122px;
 	margin-left: auto;
 	margin-right: auto;
+	
 }
 
 
 .slider img{
 	max-width:1122px;
-	
+	width: 100%;
 }
 .slider-texto{
 	
@@ -275,3 +283,15 @@ SECCION PIE
 	font-family: cursive;
 	font-size: 24px;
 }
+
+/*----------------------------
+
+MEDIA QUERIES
+
+------------------------------*/
+
+
+@media (max-width:768px){
+	
+}
+
