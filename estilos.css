@@ -18,17 +18,22 @@
 }
 
 h1{
+	font-size: 48px;
 	font-size: 3rem;
 	color: var(--azulFuentes);
 }
 h2{
 	font-size: 44px;
+	font-size: 2.75rem;
 }
 h3{
 	font-size: 30px;
+	font-size: 1.875rem;
 }
 h4{
 	font-size:18px;
+	font-size: 1.125rem;
+	
 }
 a{
 	text-decoration: none;
@@ -91,7 +96,7 @@ SECCION BOTONERA
 	
 	max-width: 1366px;  /*DECLARO ESTE ANCHO MAXIMO AQUI PARA EL FONDO OCUPE TODO EL ANCHO*/
 	background-color: var(--azulBotonera);
-	
+	margin: 0 auto;
 	padding: 10px 0;
 	
 	/* DOS LINEAS AGREGADAS PARA QUE LA BOTONERA BAJE CON EL SCROLL, ME SIGA */
@@ -119,6 +124,7 @@ SECCION BOTONERA
 	
 	color: var(--blanco);
 	font-size: 20px;
+	font-size: 1.25rem;
 	padding: 10px 5px;
 	
 }
@@ -161,6 +167,7 @@ SECCION SLIDER
 	
 	color: var(--blanco);
 	font-size: 22px;
+	font-size: 1.375rem;
 }
 
 
@@ -255,6 +262,7 @@ SECCION PIE
 	
 	color: var(--blanco);
 	font-size: 22px;
+	font-size:  1.375rem;
 	text-align: right;
 	max-width: 50%;
 	
@@ -272,6 +280,8 @@ SECCION PIE
 	display:flex;
 	justify-content: flex-end;
 	align-items: center;
+	font-size: 24px;
+	font-size: 1.5rem;
 }
 .pie-derecha-telefono img{
 	height: 35px;
@@ -279,9 +289,14 @@ SECCION PIE
 	margin-right: 10px;
 }
 
+.email{
+	font-size: 24px;
+	font-size: 1.5rem;
+}
 .creditos{
 	font-family: cursive;
 	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 /*----------------------------
@@ -291,7 +306,10 @@ MEDIA QUERIES
 ------------------------------*/
 
 
-@media (max-width:768px){
+@media (max-width:1024px){
+	html{
+		font-size: 14px;
+	}
 	
 }
 
