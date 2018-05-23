@@ -192,6 +192,17 @@ SECCION CENTRO
 
 }
 
+
+/*AGREGADO A LO ULTIMO*/
+
+
+.centro img{
+	max-width: 100%;
+}
+
+
+
+
 .centro-botones{
 	margin-top: 40px;
 	display: flex;
@@ -309,6 +320,30 @@ MEDIA QUERIES
 @media (max-width:1024px){
 	html{
 		font-size: 14px;
+	}
+	
+}
+
+@media (max-width:768px){
+	html{
+		font-size: 10px;
+	}
+	
+	.pie{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.pie-mapa{
+		max-width:80%;
+		margin-bottom: 20px;
+	}
+	.pie-derecha{
+		text-align: center;
+		max-width: 80%;
+	}
+	.pie-derecha-telefono{
+		justify-content: center;
 	}
 	
 }
