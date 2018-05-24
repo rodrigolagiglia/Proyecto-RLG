@@ -53,16 +53,19 @@ SECCION CABECERA
 	max-width: 1122px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	
 }
 
 /* IMAGEN RESPONSIVE*/
 
-.cabecera img{
-	width: 100%;
+.cabecera-imagen{
+	width:20%;
 }
 
+.cabecera-imagen img{
+	width: 100%;
+}
 
 .cabecera-texto{
 	
@@ -324,6 +327,13 @@ MEDIA QUERIES
 	
 }
 
+@media (max-width:880px){
+	html{
+		font-size: 12px;
+	}
+	
+}
+
 @media (max-width:768px){
 	html{
 		font-size: 10px;
@@ -344,6 +354,29 @@ MEDIA QUERIES
 	}
 	.pie-derecha-telefono{
 		justify-content: center;
+	}
+	
+}
+
+@media (max-width:625px){
+	html{
+		font-size: 8px;
+	}
+	
+}
+
+@media (max-width:465px){
+	.cabecera-imagen {
+		width:40%;
+	}
+	
+	.cabecera-texto h1{
+	margin-left: 40px;
+	
+	}
+	.cabecera-texto h2{
+		margin-left: 20px;
+	
 	}
 	
 }
