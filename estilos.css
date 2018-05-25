@@ -46,25 +46,27 @@ SECCION CABECERA
 
 ------------------------------*/
 .cabecera{
-	/* background-color: red; */
-	
+		
 	display:flex;
-	
+	justify-content: center;
+	flex-wrap: wrap;
 	max-width: 1122px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 25px;
-	
+	margin-bottom: 2.5vw;
+	width:100%;
 }
 
 /* IMAGEN RESPONSIVE*/
 
 .cabecera-imagen{
+	max-width: 230px;
 	width:20%;
 }
 
 .cabecera-imagen img{
 	width: 100%;
+	height: auto;
 }
 
 .cabecera-texto{
@@ -72,21 +74,26 @@ SECCION CABECERA
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	width: 70%;
 }
 
 .cabecera-texto h1{
-	margin-left: 50px;
+	margin-left: 4.45vw;
 	
 }
 .cabecera-texto h2{
-	margin-left: 25px;
+	margin-left: 2.22vw;
 	
 }
 
+.cabecera h3{
+	width: 100%;
+	text-align: center;
+	margin-top: 1vw;
+}
+
 .contenedor{
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
+	margin: auto;
 }
 
 /*----------------------------
@@ -100,8 +107,7 @@ SECCION BOTONERA
 	max-width: 1366px;  /*DECLARO ESTE ANCHO MAXIMO AQUI PARA EL FONDO OCUPE TODO EL ANCHO*/
 	background-color: var(--azulBotonera);
 	margin: 0 auto;
-	padding: 10px 0;
-	
+	box-sizing: border-box;
 	/* DOS LINEAS AGREGADAS PARA QUE LA BOTONERA BAJE CON EL SCROLL, ME SIGA */
 	position: sticky;
 	top:0;
@@ -129,6 +135,9 @@ SECCION BOTONERA
 	font-size: 20px;
 	font-size: 1.25rem;
 	padding: 10px 5px;
+	display: block;
+	
+	text-align:center;
 	
 }
 
@@ -144,7 +153,7 @@ SECCION SLIDER
 
 .slider{
 	position: relative;
-	margin-bottom: 50px;
+	margin-bottom: 4vw;
 	max-width:1122px;
 	margin-left: auto;
 	margin-right: auto;
@@ -161,14 +170,15 @@ SECCION SLIDER
 	text-align: right;
 	
 	/* Ancho maximo del texto */
-	max-width: 30%;
+	max-width: 40%;
 	
 	/* posicion del texto dentro del contenedor */
 	position: absolute;
-	top: 50px;
-	right:20px;
+	top: 3.5vw;
+	right:3vw;
 	
 	color: var(--blanco);
+	
 	font-size: 22px;
 	font-size: 1.375rem;
 }
@@ -186,7 +196,7 @@ SECCION CENTRO
 	max-width: 1122px;  
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 70px;
+	margin-bottom: 5vw;
 }
 
 .centro h3{
@@ -195,19 +205,14 @@ SECCION CENTRO
 
 }
 
-
-/*AGREGADO A LO ULTIMO*/
-
-
-.centro img{
-	max-width: 100%;
+.centro-botones img{
+	max-width: 15vw;
+	height: auto;
 }
 
 
-
-
 .centro-botones{
-	margin-top: 40px;
+	margin-top: 4vw;
 	display: flex;
 	justify-content: space-around; 
 	
@@ -219,6 +224,7 @@ SECCION CENTRO
 	box-shadow: 0 0 0 1px var(--azulOscuro);
 	max-width: 240px;
 	color: var(--azulFuentes);
+	width: 30%;
 }
 .centro-botones-uno:hover,.centro-botones-dos:hover,.centro-botones-tres:hover{
 	
@@ -298,8 +304,8 @@ SECCION PIE
 	font-size: 1.5rem;
 }
 .pie-derecha-telefono img{
-	height: 35px;
-	width: 35px;
+	height: 3vw;
+	width: 3vw;
 	margin-right: 10px;
 }
 
@@ -365,18 +371,16 @@ MEDIA QUERIES
 	
 }
 
-@media (max-width:465px){
-	.cabecera-imagen {
-		width:40%;
+@media (max-width:511px){
+	html{
+		font-size: 7px;
 	}
 	
-	.cabecera-texto h1{
-	margin-left: 40px;
-	
-	}
-	.cabecera-texto h2{
-		margin-left: 20px;
-	
+		
+}
+@media (max-width:458px){
+	html{
+		font-size: 6px;
 	}
 	
 }
