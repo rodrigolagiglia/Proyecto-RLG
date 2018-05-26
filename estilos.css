@@ -375,9 +375,15 @@ MEDIA QUERIES
 		padding-bottom: 0;
 	}
 	.pie-mapa{
-		width:70%;
+		width:60%;
 		margin-top: 2vw;
 	}
+	
+	#map{
+	height: 40vw;
+	
+	}
+	
 	.pie-derecha{
 		text-align: center;
 		max-width: 80%;
