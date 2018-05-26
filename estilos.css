@@ -274,6 +274,10 @@ SECCION FOOTER
 	padding: 1.5vw;
 	
 }
+#map{
+	height: 25vw;
+	
+}
 .pie-mapa h4, .pie-mapa p{
 	padding-bottom: 1vw;
 	
