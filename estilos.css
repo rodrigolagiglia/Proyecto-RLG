@@ -238,7 +238,7 @@ SECCION CENTRO
 
 /*----------------------------
 
-SECCION PIE
+SECCION FOOTER
 
 ------------------------------*/
 
@@ -255,9 +255,13 @@ SECCION PIE
 	display: flex;
 	justify-content: space-around;
 	
-	padding: 2vw;
-	
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-top: 2vw;
+	padding-bottom: 0;
 }
+
+/*LADO IZQUIERDO DEL FOOTER*/
 
 .pie-mapa{
 	
@@ -280,6 +284,7 @@ SECCION PIE
 }
 
 
+/*LADO DERECHO DEL FOOTER*/
 
 .pie-derecha{
 	
@@ -320,11 +325,17 @@ SECCION PIE
 	font-size: 24px;
 	font-size: 1.5rem;
 }
+
+/* CREDITOS */
+
+
 .creditos{
+	color: var(--blanco);
 	font-family: cursive;
 	font-size: 24px;
 	font-size: 1.5rem;
-	padding-top: 2vw;
+	padding: 2vw;
+	text-align: right;
 }
 
 /*----------------------------
@@ -355,12 +366,13 @@ MEDIA QUERIES
 	
 	.pie{
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-items: center;
+		padding-bottom: 0;
 	}
 	.pie-mapa{
-		max-width:80%;
-		margin-bottom: 20px;
+		width:70%;
+		margin-top: 2vw;
 	}
 	.pie-derecha{
 		text-align: center;
@@ -368,6 +380,10 @@ MEDIA QUERIES
 	}
 	.pie-derecha-telefono{
 		justify-content: center;
+		font-size: 2rem;
+	}
+	.email{
+		font-size: 2rem;
 	}
 	
 }
