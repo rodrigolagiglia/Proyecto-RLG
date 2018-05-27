@@ -419,15 +419,7 @@ MEDIA QUERIES
 		height: 24px;
 		margin: 0;
 	}
-	.botonera::after{
-		content:"MENU";
-		position: absolute;
-		color: var(--blanco);
-		height:24px;
-		top: 6px;
-		left: 30px;
-		font-size: 10px;
-	}
+
 	
 	.botonera-lista{
 		flex-direction: column;
@@ -451,6 +443,15 @@ MEDIA QUERIES
 		display: inline;
 		width: 75px;
 		text-align: left;
+	}
+	.toggle::after{
+		content:"MENU";
+		position: absolute;
+		color: var(--blanco);
+		height:24px;
+		top: 6px;
+		left: 30px;
+		font-size: 10px;
 	}
 	
 	
