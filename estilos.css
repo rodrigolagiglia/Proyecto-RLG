@@ -145,6 +145,13 @@ SECCION BOTONERA
 	color: var(--negroVerdadero);
 }
 
+.toggle{
+	display:none;
+	background: none;
+	border: none;
+	
+}
+
 /*----------------------------
 
 SECCION SLIDER
@@ -368,6 +375,8 @@ MEDIA QUERIES
 		font-size: 10px;
 	}
 	
+	
+	
 	.pie{
 		display: flex;
 		flex-direction: column-reverse;
@@ -403,6 +412,53 @@ MEDIA QUERIES
 		font-size: 8px;
 	}
 	
+	/* ***************** MENU HAMBURGUESA **************/
+	.botonera{
+		position: relative;
+		width: 75px;
+		height: 24px;
+		margin: 0;
+	}
+	.botonera::after{
+		content:"MENU";
+		position: absolute;
+		color: var(--blanco);
+		height:24px;
+		top: 6px;
+		left: 30px;
+		font-size: 10px;
+	}
+	
+	.botonera-lista{
+		flex-direction: column;
+		width: 40vw;
+		
+		position: absolute;
+		
+		display: none; 
+		background-color: var(--azulBotonera);
+		opacity: 0.8;
+		
+	}
+	
+	.botonera-lista li:nth-child(1){
+		border-top: 2px dashed var(--blanco);
+	}
+	.botonera-lista a{
+		border-bottom: 2px dashed var(--blanco);
+	}
+	.toggle{
+		display: inline;
+	}
+	
+	
+	
+	
+	/* *************  TERMINA MENU HAMBURGUESA ************/
+	
+	
+	
+	
 }
 
 @media (max-width:511px){
@@ -416,6 +472,12 @@ MEDIA QUERIES
 	html{
 		font-size: 6px;
 	}
+	
+}
+
+/* CLASE PARTE DEL MENU HAMBURGUESA QUE SE AGREGA A LA BOTONERA-LISTA CON JAVASCRIPT CUANDO SE HACE CLICK */
+.mostrar{
+	display: flex;
 	
 }
 
