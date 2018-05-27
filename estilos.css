@@ -449,6 +449,8 @@ MEDIA QUERIES
 	}
 	.toggle{
 		display: inline;
+		width: 75px;
+		text-align: left;
 	}
 	
 	
