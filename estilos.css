@@ -241,7 +241,34 @@ SECCION CENTRO
 	color: var(--azulOscuro);
 	
 }
+/*----------------------------
 
+SECCION CONTENIDO - QUIENES SOMOS
+
+------------------------------*/
+
+.contenido{
+	max-width: 1122px;
+	width: 90%;
+	margin: auto;
+	height: 55vw;
+	color: var(--azulBotonera);
+}
+
+.contenido img{
+	position: absolute;
+	opacity: 0.8;
+	max-width: 1122px;
+	width: 90%;
+}
+.contenido-interno{
+	position: relative;
+	background-color: rgba(222,237,250,0.5);
+	height: 45vw;
+	width: 90%;
+	margin: auto;
+	padding-top: 2vw;
+}
 
 /*----------------------------
 
