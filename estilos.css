@@ -416,7 +416,6 @@ MEDIA QUERIES
 	.botonera{
 		position: relative;
 		width: 75px;
-		height: 24px;
 		margin: 0;
 	}
 
@@ -429,20 +428,21 @@ MEDIA QUERIES
 		
 		display: none; 
 		background-color: var(--azulBotonera);
-		opacity: 0.8;
+	
 		
 	}
 	
 	.botonera-lista li:nth-child(1){
-		border-top: 2px dashed var(--blanco);
+		border-top: 1px dashed var(--blanco);
 	}
 	.botonera-lista a{
-		border-bottom: 2px dashed var(--blanco);
+		border-bottom: 1px dashed var(--blanco);
 	}
 	.toggle{
 		display: inline;
 		width: 75px;
 		text-align: left;
+		height: 24px;
 	}
 	.toggle::after{
 		content:"MENU";
@@ -453,6 +453,7 @@ MEDIA QUERIES
 		left: 30px;
 		font-size: 10px;
 	}
+	
 	
 	
 	
