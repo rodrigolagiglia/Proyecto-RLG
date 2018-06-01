@@ -250,10 +250,10 @@ SECCION CONTENIDO - QUIENES SOMOS
 .contenido{
 	position: relative;
 	max-width: 1122px;
-	width: 100%;
-	margin: auto;
-	height: 55vw;
+	margin: 0 auto;
 	color: var(--azulBotonera);
+	background-color: #dcd4d1;
+	width: 100%;
 }
 
 .contenido img{
@@ -264,11 +264,19 @@ SECCION CONTENIDO - QUIENES SOMOS
 }
 .contenido-interno{
 	position: absolute;
-	background-color: rgba(222,237,250,0.5);
-	height: 45vw;
-	width: 90%;
-	margin: auto;
-	padding-top: 2vw;
+	top: 2vw;
+	left: 2vw;
+	right:2vw;
+	bottom: 2vw;
+	background-color: rgba(222,237,250,0.4);
+	padding: 2vw;
+		
+}
+.contenido-interno h3{
+	padding: 1vw;
+}
+.contenido-interno p{
+	padding: 1vw;
 }
 
 /*----------------------------
