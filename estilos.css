@@ -3,7 +3,7 @@
 :root{
 	--negroVerdadero: #000;
 	--blanco: #FFF;
-	--azulFuentes: #045ba3;
+	--azulFuentes: #045ba3; /* mismo azul !!!!!!!*/
 	--azulBotonera:#045ba3;
 	--azulOscuro: #003460;
 }
@@ -107,7 +107,7 @@ SECCION BOTONERA
 	max-width: 1366px;  /*DECLARO ESTE ANCHO MAXIMO AQUI PARA EL FONDO OCUPE TODO EL ANCHO*/
 	background-color: var(--azulBotonera);
 	margin: 0 auto;
-	box-sizing: border-box;
+	box-sizing: border-box; /* Chequear!!!!¡!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	/* DOS LINEAS AGREGADAS PARA QUE LA BOTONERA BAJE CON EL SCROLL, ME SIGA */
 	position: sticky;
 	top:0;
@@ -135,7 +135,7 @@ SECCION BOTONERA
 	font-size: 20px;
 	font-size: 1.25rem;
 	padding: 10px 5px;
-	display: block;
+	display: block;.  /* Chequear!!!!!!!!!!!!!!!!!*/
 	
 	text-align:center;
 	
@@ -248,21 +248,22 @@ SECCION CONTENIDO - QUIENES SOMOS
 ------------------------------*/
 
 .contenido{
+	position: relative;
 	max-width: 1122px;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 	height: 55vw;
 	color: var(--azulBotonera);
 }
 
 .contenido img{
-	position: absolute;
+	
 	opacity: 0.8;
 	max-width: 1122px;
-	width: 90%;
+	width: 100%;
 }
 .contenido-interno{
-	position: relative;
+	position: absolute;
 	background-color: rgba(222,237,250,0.5);
 	height: 45vw;
 	width: 90%;
