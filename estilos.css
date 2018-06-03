@@ -227,7 +227,6 @@ SECCION CENTRO
 
 .centro-botones-uno,.centro-botones-dos,.centro-botones-tres{
 	text-align:center;
-	/* border: 1px solid var(--azulBotonera); */
 	box-shadow: 0 0 0 1px var(--azulOscuro);
 	max-width: 240px;
 	color: var(--azulFuentes);
@@ -251,7 +250,7 @@ SECCION CONTENIDO - QUIENES SOMOS
 	position: relative;
 	max-width: 1122px;
 	margin: 0 auto;
-	color: var(--azulBotonera);
+	color: var(--negroVerdadero);
 	background-color: #dcd4d1;
 	width: 100%;
 }
@@ -263,14 +262,14 @@ SECCION CONTENIDO - QUIENES SOMOS
 	width: 100%;
 }
 .contenido-interno{
+	
 	position: absolute;
 	top: 2vw;
 	left: 2vw;
 	right:2vw;
-	/* bottom: 2vw; */
 	background-color: rgba(222,237,250,0.4);
 	padding: 2vw;
-	
+	border-radius: 2px;
 	text-align: justify;
 		
 }
@@ -310,40 +309,7 @@ SECCION CONTENIDO - QUIENES SOMOS
 	animation-fill-mode: forwards;
 	animation-delay: 0.3s;
 }
-@keyframes quienes{
-	from{
-		opacity:0;
-	}
-	to{
-		opacity:1;
-	}
-	
-}@keyframes lineaV-quienes{
-	from{
-		width:1px;
-		height:1px;
-	}
-	
-	to{
-		width:1px;
-		height:85%;
-	}
-	
-}
 
-@keyframes lineaH-quienes{
-	from{
-		width:1px;
-		height:1px;
-	}
-	
-	to{
-		width:95%;
-		height:1px;
-		
-	}
-	
-}
 
 
 /*----------------------------
@@ -373,9 +339,7 @@ SECCION FOOTER
 
 /*LADO IZQUIERDO DEL FOOTER*/
 
-.pie-mapa{
-	
-	
+.pie-mapa{	
 	width: 40%;
 	border: 2px solid var(--blanco);
 	height: 100%;
@@ -459,23 +423,23 @@ MEDIA QUERIES
 ------------------------------*/
 
 
-@media (max-width:1024px){
+@media (max-width:970px){
 	html{
 		font-size: 14px;
 	}
 	
 }
 
-@media (max-width:880px){
+@media (max-width:850px){
 	html{
-		font-size: 12px;
+		font-size: 13px;
 	}
 	
 }
 
-@media (max-width:768px){
+@media (max-width:790px){
 	html{
-		font-size: 10px;
+		font-size: 12px;
 	}
 	
 	
@@ -510,15 +474,28 @@ MEDIA QUERIES
 	
 }
 
-@media (max-width:625px){
+@media (max-width:730px){
 	html{
-		font-size: 8px;
+		font-size:11px;
+	}
+}
+
+@media (max-width:675px){
+	html{
+		font-size:10px;
+	}
+}
+
+
+@media (max-width:610px){
+	html{
+		font-size: 9px;
 	}
 	
-	/* ***************** MENU HAMBURGUESA **************/
+	/* ***MENU HAMBURGUESA ***/
 	.botonera{
 		position: relative;
-		width: 75px;
+		width: 100%;
 		margin: 0;
 	}
 
@@ -560,25 +537,54 @@ MEDIA QUERIES
 		font-size: 10px;
 	}
 	
-	
-	
-	
-	
-	/* *************  TERMINA MENU HAMBURGUESA ************/
-	
+		
+	/* ***  TERMINA MENU HAMBURGUESA ***/
+	h3{
+		font-size:2rem;
+	}
+	.centro-botones{
+		flex-direction:column;
+		align-items: center;
+		margin: auto;
+		margin-top: 10px;
+		
+	}
+	h4{
+		font-size: 1.7rem;
+	}
+	.centro img{
+		max-width:25vw;
+		
+	}
+	.centro-botones-uno, .centro-botones-dos{
+		margin-bottom: 10px;
+		max-width: 70vw;
+		width: 60%;
+		font-size: 1.5rem;
+	}
+	.centro-botones-tres{
+		max-width: 70vw;
+		width: 60%;
+		font-size: 1.5rem;
+	}
 	
 	
 	
 }
 
-@media (max-width:511px){
+@media (max-width:555px){
 	html{
-		font-size: 7px;
+		font-size: 8px;
 	}
 	
 		
 }
-@media (max-width:458px){
+@media (max-width:495px){
+	html{
+		font-size: 7px;
+	}
+	
+}@media (max-width:440px){
 	html{
 		font-size: 6px;
 	}
@@ -593,9 +599,42 @@ MEDIA QUERIES
 
 /*----------------------------
 
-KEYFRAME
+KEYFRAMES
 
 ------------------------------*/
 
+@keyframes quienes{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+	
+}@keyframes lineaV-quienes{
+	from{
+		width:1px;
+		height:1px;
+	}
+	
+	to{
+		width:1px;
+		height:85%;
+	}
+	
+}
 
+@keyframes lineaH-quienes{
+	from{
+		width:1px;
+		height:1px;
+	}
+	
+	to{
+		width:95%;
+		height:1px;
+		
+	}
+	
+}
 
