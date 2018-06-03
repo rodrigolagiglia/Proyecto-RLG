@@ -328,13 +328,6 @@ SECCION CONTENIDO - QUIENES SOMOS
 	
 }
 
-.contacto-linea{
-	position:absolute;
-	width:30vw;
-	height:1px;
-	background-color:var(--negroVerdadero);
-	opacity:0;
-}
 .contacto-formulario{
 	position:absolute;
 	top: 2vw;
@@ -348,14 +341,27 @@ SECCION CONTENIDO - QUIENES SOMOS
 	width:40%;
 	height:40%;
 	transform:translateY(-50vw);
+	opacity:0;
 	align-self:center;
 	animation-name: contactoSobre;
 	animation-duration:1s;
 	animation-timing-function:ease-in;
 	animation-play-state: running;
 	animation-fill-mode: forwards;
-	animation-delay: 0s;
+	animation-delay: 0.3s;
 }
+
+.contacto-formulario::after{
+		content:"*(ver pie)";
+		position: absolute;
+		color: var(--blanco);
+		height:24px;
+		bottom: 2.5vw;
+		left:30vw;
+		font-size: 0.4rem;
+	}
+	
+
 .contacto-formulario h3{
 	position: absolute;
 	top: 1vw;
@@ -366,7 +372,7 @@ SECCION CONTENIDO - QUIENES SOMOS
 	animation-timing-function:linear;
 	animation-play-state: running;
 	animation-fill-mode: forwards;
-	animation-delay: 0.3s;
+	animation-delay: 0.4s;
 }
 
 .contacto-formulario form{
@@ -384,7 +390,12 @@ SECCION CONTENIDO - QUIENES SOMOS
 	height: 10vw;
 }
 
-
+.copy-contacto{
+	font-size: 0.6rem;
+	color: var(--blanco);
+	float:left;
+	padding-left: 20px;
+}
 
 
 
@@ -595,10 +606,10 @@ MEDIA QUERIES
 	}
 	
 	.botonera-lista li:nth-child(1){
-		border-top: 1px dashed var(--blanco);
+		border-top: 1px solid var(--blanco);
 	}
 	.botonera-lista a{
-		border-bottom: 1px dashed var(--blanco);
+		border-bottom: 1px solid var(--blanco);
 	}
 	.toggle{
 		display: inline;
@@ -745,7 +756,7 @@ KEYFRAMES
 	}
 	100%{
 		transform:translateY(0);
-		
+		opacity:1;
 	}
 	
 }
