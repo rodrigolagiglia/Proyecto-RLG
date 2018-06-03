@@ -309,6 +309,27 @@ SECCION CONTENIDO - QUIENES SOMOS
 	animation-fill-mode: forwards;
 	animation-delay: 0.3s;
 }
+/*--------------CONTACTO-----------*/
+.contacto{
+	position:relative;
+	height:60vw;
+}
+
+.contacto-linea{
+	position:absolute;
+	width:30vw;
+	height:1px;
+	background-color:var(--negroVerdadero);
+	opacity:0;
+}
+form{
+	display:flex;
+	flex-direction: column;
+	margin: auto;
+	width:50%;
+}
+
+
 
 
 
@@ -408,11 +429,14 @@ SECCION FOOTER
 
 
 .creditos{
+	margin-top:1vw;
+	border-top: 1px solid var(--blanco);
 	color: var(--blanco);
 	font-family: cursive;
 	font-size: 24px;
 	font-size: 1.5rem;
-	padding: 2vw;
+	padding-right: 2vw;
+	padding-bottom: 2vw;
 	text-align: right;
 }
 
@@ -539,6 +563,8 @@ MEDIA QUERIES
 	
 		
 	/* ***  TERMINA MENU HAMBURGUESA ***/
+	
+	/*CAMBIO POSICION DE BOTONES CENTRO*/
 	h3{
 		font-size:2rem;
 	}
@@ -568,6 +594,9 @@ MEDIA QUERIES
 		font-size: 1.5rem;
 	}
 	
+	.contenido-interno p{
+		font-size:1.2rem;
+	}
 	
 	
 }
@@ -588,7 +617,9 @@ MEDIA QUERIES
 	html{
 		font-size: 6px;
 	}
-	
+	.contenido-interno p{
+		font-size: 1rem;
+	}
 }
 
 /* CLASE PARTE DEL MENU HAMBURGUESA QUE SE AGREGA A LA BOTONERA-LISTA CON JAVASCRIPT CUANDO SE HACE CLICK */
