@@ -267,17 +267,84 @@ SECCION CONTENIDO - QUIENES SOMOS
 	top: 2vw;
 	left: 2vw;
 	right:2vw;
-	bottom: 2vw;
+	/* bottom: 2vw; */
 	background-color: rgba(222,237,250,0.4);
 	padding: 2vw;
+	
+	text-align: justify;
 		
 }
-.contenido-interno h3{
+
+.contenido-interno h3, .contenido-interno p{
+	opacity:0;
 	padding: 1vw;
+	animation-name: quienes;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-play-state:running;
+	animation-delay: 0.3s;
+	animation-fill-mode: forwards;
 }
-.contenido-interno p{
-	padding: 1vw;
+
+.contenido-interno_lineaV{
+	position:absolute;
+	top: 2vw;
+	left: 1.5vw;
+	background-color: var(--azulBotonera);
+	animation-name: lineaV-quienes;
+	animation-duration:1.5s;
+	animation-timing-function:linear;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+	animation-delay: 0.3s;
 }
+.contenido-interno_lineaH{
+	position:absolute;
+	top: 2vw;
+	left: 1.5vw;
+	background-color: var(--azulBotonera);
+	animation-name: lineaH-quienes;
+	animation-duration:1.5s;
+	animation-timing-function:linear;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+	animation-delay: 0.3s;
+}
+@keyframes quienes{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+	
+}@keyframes lineaV-quienes{
+	from{
+		width:1px;
+		height:1px;
+	}
+	
+	to{
+		width:1px;
+		height:85%;
+	}
+	
+}
+
+@keyframes lineaH-quienes{
+	from{
+		width:1px;
+		height:1px;
+	}
+	
+	to{
+		width:95%;
+		height:1px;
+		
+	}
+	
+}
+
 
 /*----------------------------
 
@@ -523,4 +590,12 @@ MEDIA QUERIES
 	display: flex;
 	
 }
+
+/*----------------------------
+
+KEYFRAME
+
+------------------------------*/
+
+
 
