@@ -6,6 +6,7 @@
 	--azulFuentes: #045ba3; /* mismo azul !!!!!!!*/
 	--azulBotonera:#045ba3;
 	--azulOscuro: #003460;
+	--azulClaroConOpacidad:rgba(222,237,250,0.4);
 }
 
 *{
@@ -267,7 +268,7 @@ SECCION CONTENIDO - QUIENES SOMOS
 	top: 2vw;
 	left: 2vw;
 	right:2vw;
-	background-color: rgba(222,237,250,0.4);
+	background-color: var(--azulClaroConOpacidad);
 	padding: 2vw;
 	border-radius: 2px;
 	text-align: justify;
@@ -309,10 +310,22 @@ SECCION CONTENIDO - QUIENES SOMOS
 	animation-fill-mode: forwards;
 	animation-delay: 0.3s;
 }
+
+/*TERMINA SECCION CONTENIDO PAGINA QUIENES SOMOS */
+
+
+
+
 /*--------------CONTACTO-----------*/
 .contacto{
 	position:relative;
-	height:60vw;
+	max-width:1122px;
+	margin: auto;
+}
+.contacto > img{
+	
+	width:100%;
+	
 }
 
 .contacto-linea{
@@ -322,11 +335,53 @@ SECCION CONTENIDO - QUIENES SOMOS
 	background-color:var(--negroVerdadero);
 	opacity:0;
 }
-form{
+.contacto-formulario{
+	position:absolute;
+	top: 2vw;
+	right:5vw;
+	left:5vw;
+	background-color: var(--azulClaroConOpacidad);
 	display:flex;
+	justify-content: space-around;
+}
+.contacto-formulario img{
+	width:40%;
+	height:40%;
+	transform:translateY(-50vw);
+	align-self:center;
+	animation-name: contactoSobre;
+	animation-duration:1s;
+	animation-timing-function:ease-in;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+	animation-delay: 0s;
+}
+.contacto-formulario h3{
+	position: absolute;
+	top: 1vw;
+	left: 3vw;
+	opacity: 0;
+	animation-name: contacto;
+	animation-duration:1.5s;
+	animation-timing-function:linear;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+	animation-delay: 0.3s;
+}
+
+.contacto-formulario form{
+	
 	flex-direction: column;
-	margin: auto;
-	width:50%;
+	width:40%;
+}
+.contacto-formulario form input, .contacto-formulario form textarea{
+	margin-bottom:1vw;
+	width:100%;
+	font-size:1.5rem;
+	
+}
+.contacto-formulario form textarea{
+	height: 10vw;
 }
 
 
@@ -664,6 +719,32 @@ KEYFRAMES
 	to{
 		width:95%;
 		height:1px;
+		
+	}
+	
+}
+
+@keyframes contacto{
+	from{
+		opacity:0;
+	}
+	
+	to{
+		opacity:1;
+		
+	}
+	
+}
+@keyframes contactoSobre{
+	0%{
+		opacity:0;
+	}
+	
+	50%{
+		opacity:0;
+	}
+	100%{
+		transform:translateY(0);
 		
 	}
 	
