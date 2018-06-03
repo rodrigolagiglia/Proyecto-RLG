@@ -394,7 +394,8 @@ SECCION CONTENIDO - QUIENES SOMOS
 	font-size: 0.6rem;
 	color: var(--blanco);
 	float:left;
-	padding-left: 20px;
+	padding: 20px;
+	
 }
 
 
