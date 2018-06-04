@@ -3,7 +3,6 @@
 :root{
 	--negroVerdadero: #000;
 	--blanco: #FFF;
-	--azulFuentes: #045ba3; /* mismo azul !!!!!!!*/
 	--azulBotonera:#045ba3;
 	--azulOscuro: #003460;
 	--azulClaroConOpacidad:rgba(222,237,250,0.4);
@@ -21,7 +20,7 @@
 h1{
 	font-size: 48px;
 	font-size: 3rem;
-	color: var(--azulFuentes);
+	color: var(--azulBotonera);
 }
 h2{
 	font-size: 44px;
@@ -54,7 +53,7 @@ SECCION CABECERA
 	max-width: 1122px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 2.5vw;
+	margin-bottom: 1vw;
 	width:100%;
 }
 
@@ -105,20 +104,20 @@ SECCION BOTONERA
 
 .botonera{
 	
-	max-width: 1366px;  /*DECLARO ESTE ANCHO MAXIMO AQUI PARA EL FONDO OCUPE TODO EL ANCHO*/
+	
 	background-color: var(--azulBotonera);
 	margin: 0 auto;
 	box-sizing: border-box; /* Chequear!!!!¡!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	/* DOS LINEAS AGREGADAS PARA QUE LA BOTONERA BAJE CON EL SCROLL, ME SIGA */
 	position: sticky;
 	top:0;
-	z-index:3;
+	z-index:1;
 	
 }
 
 .botonera-lista{
 	
-	/* COMO EL FONDO PUEDE MEDIR HASTA 1366PX DE ANCHO LIMITO EL ANCHO DE MI MENU 
+	/* COMO EL FONDO PUEDE MEDIR TODO EL ANCHO , LIMITO EL ANCHO DE MI MENU 
 		Y LO CENTRO, PERO NO ASI SU FONDO DECLARADO EN .BOTONERA */
 	max-width: 1122px;  
 	margin-left: auto;
@@ -136,7 +135,7 @@ SECCION BOTONERA
 	font-size: 20px;
 	font-size: 1.25rem;
 	padding: 10px 5px;
-	display: block;.  /* Chequear!!!!!!!!!!!!!!!!!*/
+	display: block;  /* Chequear!!!!!!!!!!!!!!!!!*/
 	
 	text-align:center;
 	
@@ -178,12 +177,12 @@ SECCION SLIDER
 	text-align: right;
 	
 	/* Ancho maximo del texto */
-	max-width: 40%;
+	max-width: 50%;
 	
 	/* posicion del texto dentro del contenedor */
 	position: absolute;
 	top: 3.5vw;
-	right:3vw;
+	right:4vw;
 	
 	color: var(--blanco);
 	
@@ -208,14 +207,13 @@ SECCION CENTRO
 }
 
 .centro h3{
-	color: var(--azulFuentes);
+	color: var(--azulBotonera);
 	text-align:center;
 
 }
 
 .centro-botones img{
 	max-width: 15vw;
-	height: auto;
 }
 
 
@@ -230,7 +228,7 @@ SECCION CENTRO
 	text-align:center;
 	box-shadow: 0 0 0 1px var(--azulOscuro);
 	max-width: 240px;
-	color: var(--azulFuentes);
+	color: var(--azulBotonera);
 	width: 30%;
 }
 .centro-botones-uno:hover,.centro-botones-dos:hover,.centro-botones-tres:hover{
@@ -330,36 +328,41 @@ SECCION CONTENIDO - QUIENES SOMOS
 
 .contacto-formulario{
 	position:absolute;
-	top: 2vw;
+	top: 5vw;
 	right:5vw;
 	left:5vw;
 	background-color: var(--azulClaroConOpacidad);
 	display:flex;
 	justify-content: space-around;
 }
-.contacto-formulario img{
+.contacto-formulario-sobre{
 	width:40%;
 	height:40%;
+	align-self:center;
+}
+.copy-sobre{
+	color:var(--blanco);
+	font-size:0.6rem;
+	text-align:right;
+	display:block;
+}
+
+
+.contacto-formulario img{
+	width:100%;
+	height:100%;
 	transform:translateY(-50vw);
 	opacity:0;
 	align-self:center;
 	animation-name: contactoSobre;
 	animation-duration:1s;
-	animation-timing-function:ease-in;
+	animation-timing-function:ease-out;
 	animation-play-state: running;
 	animation-fill-mode: forwards;
 	animation-delay: 0.3s;
 }
 
-.contacto-formulario::after{
-		content:"*(ver pie)";
-		position: absolute;
-		color: var(--blanco);
-		height:24px;
-		bottom: 2.5vw;
-		left:30vw;
-		font-size: 0.4rem;
-	}
+
 	
 
 .contacto-formulario h3{
@@ -379,6 +382,13 @@ SECCION CONTENIDO - QUIENES SOMOS
 	
 	flex-direction: column;
 	width:40%;
+	opacity:0;
+	animation-name: contacto;
+	animation-duration:1.5s;
+	animation-timing-function:linear;
+	animation-play-state: running;
+	animation-fill-mode: forwards;
+	animation-delay: 0.4s;
 }
 .contacto-formulario form input, .contacto-formulario form textarea{
 	margin-bottom:1vw;
@@ -390,15 +400,11 @@ SECCION CONTENIDO - QUIENES SOMOS
 	height: 10vw;
 }
 
-.copy-contacto{
-	font-size: 0.6rem;
-	color: var(--blanco);
-	float:left;
-	padding: 1vw;
+/*--------------SERVICIOS-----------*/
+
+.servicios{
 	
 }
-
-
 
 /*----------------------------
 
@@ -542,7 +548,7 @@ MEDIA QUERIES
 		padding-bottom: 0;
 	}
 	.pie-mapa{
-		width:60%;
+		width:70%;
 		margin-top: 2vw;
 	}
 	
@@ -616,7 +622,6 @@ MEDIA QUERIES
 		display: inline;
 		width: 75px;
 		text-align: left;
-		height: 24px;
 	}
 	.toggle::after{
 		content:"MENU";
@@ -651,12 +656,11 @@ MEDIA QUERIES
 	}
 	.centro-botones-uno, .centro-botones-dos{
 		margin-bottom: 10px;
-		max-width: 70vw;
+		
 		width: 60%;
 		font-size: 1.5rem;
 	}
 	.centro-botones-tres{
-		max-width: 70vw;
 		width: 60%;
 		font-size: 1.5rem;
 	}
@@ -680,15 +684,23 @@ MEDIA QUERIES
 		font-size: 7px;
 	}
 	
-}@media (max-width:440px){
+}
+@media (max-width:440px){
 	html{
 		font-size: 6px;
 	}
 	.contenido-interno p{
 		font-size: 1rem;
 	}
+	h3{
+		font-size:1.5rem;
+	}
 }
-
+@media (max-width:300px){
+	body{
+		width:300px;
+	}	
+}
 /* CLASE PARTE DEL MENU HAMBURGUESA QUE SE AGREGA A LA BOTONERA-LISTA CON JAVASCRIPT CUANDO SE HACE CLICK */
 .mostrar{
 	display: flex;
