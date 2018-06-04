@@ -353,6 +353,7 @@ SECCION CONTENIDO - QUIENES SOMOS
 	height:100%;
 	transform:translateY(-50vw);
 	opacity:0;
+	background-color: azulClaroConOpacidad;
 	align-self:center;
 	animation-name: contactoSobre;
 	animation-duration:1s;
