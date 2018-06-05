@@ -442,6 +442,18 @@ SECCION CONTENIDO - QUIENES SOMOS
 .column-img img{
 	width:80%;
 }
+/*--------------------OUTLET----------------*/
+.outlet{
+	max-width: 1122px;
+	margin: 2vw auto;
+	text-align:center;
+}
+.outlet img{
+	width:100%;
+}
+.outlet a{
+	font-size:0.6rem;
+}
 /*----------------------------
 
 SECCION FOOTER
