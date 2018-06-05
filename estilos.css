@@ -107,7 +107,7 @@ SECCION BOTONERA
 	
 	background-color: var(--azulBotonera);
 	margin: 0 auto;
-	box-sizing: border-box; /* Chequear!!!!¡!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+	
 	/* DOS LINEAS AGREGADAS PARA QUE LA BOTONERA BAJE CON EL SCROLL, ME SIGA */
 	position: sticky;
 	top:0;
@@ -350,10 +350,8 @@ SECCION CONTENIDO - QUIENES SOMOS
 
 .contacto-formulario img{
 	width:100%;
-	height:100%;
 	transform:translateY(-50vw);
 	opacity:0;
-	background-color: azulClaroConOpacidad;
 	align-self:center;
 	animation-name: contactoSobre;
 	animation-duration:1s;
@@ -404,9 +402,46 @@ SECCION CONTENIDO - QUIENES SOMOS
 /*--------------SERVICIOS-----------*/
 
 .servicios{
+	max-width: 1122px;
+	width:100%;
+	margin: auto;
 	
 }
+.servicios-titulo{
+	border-top: 1px solid var(--azulBotonera);
+	margin-top: 3vw;
+	text-align:center;
+}
+.servicios h3{
+	position:relative;
+	top:-20px;
+	padding-left:2vw;
+	padding-right:2vw;
+	background-color: var(--blanco);
+	display: inline;	
+}
 
+.row{
+	max-width:1122px;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:4vw 0;
+	border-bottom: 1px solid var(--azulBotonera);;
+}
+
+.column-texto{
+	width:50%;
+	padding: 0 2vw;
+	text-align:justify;
+}
+.column-img{
+	width:40%;
+}
+.column-img img{
+	width:80%;
+}
 /*----------------------------
 
 SECCION FOOTER
@@ -576,6 +611,14 @@ MEDIA QUERIES
 	html{
 		font-size:11px;
 	}
+	
+	.servicios-titulo {
+		margin-top:4vw;
+	
+	}
+	.servicios-titulo h3{
+		top:-11px;
+	}
 }
 
 @media (max-width:675px){
@@ -700,7 +743,12 @@ MEDIA QUERIES
 @media (max-width:300px){
 	body{
 		width:300px;
-	}	
+	}
+	
+	.servicios-titulo h3{
+		top:-8px;
+	}
+	
 }
 /* CLASE PARTE DEL MENU HAMBURGUESA QUE SE AGREGA A LA BOTONERA-LISTA CON JAVASCRIPT CUANDO SE HACE CLICK */
 .mostrar{
